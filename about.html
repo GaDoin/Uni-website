@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>About us | UVRT</title>
+    <link rel="icon" href="images/icon.png" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;1,100&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navlinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="course.html">Study</a></li>
+                    <li><a href="blog.html">Connect with us</a></li>
+                    <li><a href="contact.html">Inquiry</a></li>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="portal.html">Student Portal</a></li>
+                    <li><a href="login.html">Login/sign up</a></li>
+                    <input type="search" name="search" placeholder="Search here" autocomplete="off">
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Hear everything about us!</h1>
+        <h3>Don't miss out our achievements!</h3>
+    </section>
+
+    <!----- about us content ---------->
+
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>We are Australia's largest University</h1>
+                <p>University of Vertical Radiance Technology (UVRT), is a privately controlled co-educational
+                    University of higher
+                    learning famous for its scientific and technological training and research. It was chartered by the
+                    state of Asgard in 1884 and became a land-grant college in 1899. Anthony Edward "Tony" Stark, UVRT’s
+                    founder and first president, had worked for years to organize a University of higher learning
+                    devoted entirely to scientific and technical training, but the outbreak of the Marvel Cinematic
+                    Infinity War
+                    delayed the opening of the school until 1886, when 28 students enrolled for the first classes, held
+                    in Neverland. UVRT moved to Sydney, New South Wales, in 1916; its campus is located along the Sydney
+                    Harbour Bridge.</p>
+            </div>
+            <div class="about-col">
+                <img src="images/workk.webp">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="about-col">
+                <h1>#1 Computer Science and Technology in Australia</h1>
+                <p>For the past three years, University of Vertical Radiance Technology has beaten more than 20
+                    universities
+                    in Australia in the Computer Science course. UVRT is ranked #9 in top global universities in the
+                    world after beating University of Toronto last year.</p>
+            </div>
+            <div class="about-col">
+                <img src="images/compsci.jpg">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="about-col">
+                <h1>Highest acceptance rate University in Australia</h1>
+                <p>University acceptance rates can be an indicator of quality from the student perspective. A higher
+                    acceptance rate indicates that a higher proportion of applicants accepted university offers.
+                    <br>Here in UVRT we are the university with the highest acceptance rate. We don't guarantee our
+                    students will get a job straight after graduate, but based on statistics last year about 48% of our
+                    top students receive a job offer. So if you want to increase your acceptance rate, you know which
+                    University to
+                    choose.
+                </p>
+                <a href="blog.html" class="hero-btn red-btn">EXPLORE NOW</a>
+            </div>
+            <div class="about-col">
+                <img src="images/about.jpg">
+            </div>
+        </div>
+    </section>
+
+    <!-------- Footer --------->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>We go Straight to The Top<br>Because, Your Future Starts Here</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Made with <i class="fa fa-heart-o"></i> by Edward Lukman & Easy Tutorials</p>
+    </section>
+
+    <!------JavaScript for Toggle Menu------->
+    <script>
+
+        var navlinks = document.getElementById("navlinks");
+        function showMenu() {
+            navlinks.style.right = "0";
+        }
+        function hideMenu() {
+            navlinks.style.right = "-200px";
+        }
+
+    </script>
+
+</body>
+
+</html>

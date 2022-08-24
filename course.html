@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Courses | UVRT</title>
+    <link rel="icon" href="images/icon.png" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;1,100&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navlinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="course.html">Study</a></li>
+                    <li><a href="blog.html">Connect with us</a></li>
+                    <li><a href="contact.html">Inquiry</a></li>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="portal.html">Student Portal</a></li>
+                    <li><a href="login.html">Login/sign up</a></li>
+                    <input type="search" name="search" placeholder="Search here" autocomplete="off">
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Courses and Academic Degrees available only for You<br><i class="fa fa-smile-o"></i> </h1>
+    </section>
+
+    <!----- Courses---------->
+    <section class="course">
+        <h1>Courses We Offer</h1>
+        <p>We offer Undergraduate single degree, double degree and post graduate degree. </p>
+
+        <div class="row">
+            <div class="course-col">
+                <h3>Undergraduate</h3>
+                <p>Natural and Physical Sciences<br>
+                    Architecture and Building<br>
+                    Information Technology<br>
+                    Engineering and Related Technologies<br>
+                    Health<br>
+                    Education<br>
+                    Humanities and Law<br>
+                    Business and Management<br>
+                    Creative Arts<br>
+                    Environmental and Related Studies<br>
+                </p>
+            </div>
+            <div class="course-col">
+                <h3>Undergraduate Double Degree</h3>
+                <p>Bachelor of Engineering/Computer Science<br>
+                    Bachelor of Commerce/Law<br>
+                    Bachelor of Actuarial Studies/Commerce<br>
+                    Bachelor of Commerce/Information Technology<br>
+                    Bachelor of Science/Commerce<br>
+                    Bachelor of Economics/Arts<br>
+                    Bachelor of Medicine/Commerce<br>
+                </p>
+            </div>
+            <div class="course-col">
+                <h3>Post Graduate</h3>
+                <p>Master of Engineering Science<br>
+                    Master of Translation<br>
+                    Master of Health<br>
+                    Master of Business Administration<br>
+                    Master of Management<br>
+                    Master of Science in Health Data Science<br>
+                    Master of Information Technology<br>
+                    Master of Arts<br>
+                    Master of Computer Applications<br></p>
+            </div>
+        </div>
+    </section>
+
+    <!------- facilities -------->
+    <section class="facilities">
+        <h1>Our Facilities</h1>
+        <p>We have the best facilities throughout all universities in Australia that will motivate your
+            studies at UVRT.</p>
+
+        <div class="row">
+            <div class="facilities-col">
+                <img src="images/library.png">
+                <h3>World Class Library</h3>
+                <p>Access to a well-stocked library makes it a lot easier to complete your assignments and get some
+                    quiet study done between classes. Some institutions also house faculty-specific libraries (such as
+                    for business or law) or subject-specific libraries (such as for cinema studies). Most facilities
+                    also stock plenty of fiction, magazines and even DVDs, and most allow personal internet use. Staff
+                    are on hand to answer any questions or help you locate resources and run regular sessions to assist
+                    students to develop information research skills. These generally occur at the beginning of each
+                    semester.</p>
+            </div>
+            <div class="facilities-col">
+                <img src="images/basketball.png">
+                <h3>Largest Play Ground</h3>
+                <p>University of Vertical Radiance Technology's basketball arena is the biggest by a landslide, coming
+                    in first place with 34,847 seats.
+                    The huge space makes more sense once you know that the Orange football and lacrosse teams also play
+                    there — and the capacity is increased to 49,356 for those games. UVRT’s fans have a new reason to
+                    get excited about the massive arena that originally opened in 1978 — renovations coming in the next
+                    few years include a new roof, scoreboard and air conditioning.</p>
+            </div>
+            <div class="facilities-col">
+                <img src="images/cafeteria.png">
+                <h3>Tasty and Healthy Food</h3>
+                <p>To ensure quality and hygiene of the food, a Canteen Committee looks after
+                    the menu selection and quality of service.
+                    Fast food, lunch, snack bars, baked goods, tea and coffee can be found at our campus.
+
+                    Cafeteria provides fresh meals prepared according to hygienic rules. It is a place where students
+                    enjoy their favorite meals and have social interaction and they discuss academic and social issues
+                    with fellow students. A committee is deputed to check and examine quantity, quality and rates of the
+                    food at the university. It also monitors the hygenic conditions of the cafeteria.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-------- Footer --------->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>We go Straight to The Top<br>Because, Your Future Starts Here</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Made with <i class="fa fa-heart-o"></i> by Edward Lukman & Easy Tutorials</p>
+    </section>
+
+    <!------JavaScript for Toggle Menu------->
+    <script>
+
+        var navlinks = document.getElementById("navlinks");
+        function showMenu() {
+            navlinks.style.right = "0";
+        }
+        function hideMenu() {
+            navlinks.style.right = "-200px";
+        }
+
+    </script>
+
+</body>
+
+</html>

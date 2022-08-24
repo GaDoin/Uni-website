@@ -1,0 +1,966 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(images/stairs.jpeg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+}
+nav img {
+  width: 150px;
+}
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+.nav-links ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+}
+.nav-links ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #e007d6;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.nav-links ul li:hover::after {
+  width: 100%;
+}
+
+.active-nav-link {
+  border-bottom: 1px solid #e007d6;
+}
+
+.active-nav-link a {
+  color: #e007d6 !important;
+}
+.text-box {
+  width: 90%;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.text-box h1 {
+  font-size: 62px;
+}
+.text-box p {
+  margin: 10px 0 40px;
+  font-size: 14px;
+  color: #fff;
+}
+.hero-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 12px 34px;
+  font-size: 13px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+.hero-btn:hover {
+  border: 1px solid #e007d6;
+  background: #e007d6;
+  transition: 1s;
+}
+
+nav .fa {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  .text-box h1 {
+    font-size: 20px;
+  }
+  .nav-links ul li {
+    display: block;
+  }
+  .nav-links {
+    position: fixed;
+    background: #e007d6;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    text-align: left;
+    z-index: 2;
+    transition: 1s;
+  }
+  nav .fa {
+    display: block;
+    color: white;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+  }
+  .nav-links ul {
+    padding: 30px;
+  }
+}
+
+/*------- course -------*/
+
+.course {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+h1 {
+  font-size: 36px;
+  font-weight: 600;
+}
+p {
+  color: black;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 10px;
+}
+
+.row {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+.course-col {
+  flex-basis: 31%;
+  background: #fff3f3;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 20px 12px;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+h3 {
+  text-align: center;
+  font-weight: 600;
+  margin: 10px 0;
+}
+.course-col:hover {
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 700px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
+/*---------- campus ----------*/
+
+.campus {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+}
+.campus-col {
+  flex-basis: 32%;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+}
+.campus-col img {
+  width: 100%;
+  display: block;
+}
+
+.layer {
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+.layer:hover {
+  background: rgba(190, 0, 207, 0.7);
+}
+.layer h3 {
+  width: 100%;
+  font-weight: 500;
+  color: white;
+  font-size: 26px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s;
+}
+.layer:hover h3 {
+  bottom: 49%;
+  opacity: 1;
+}
+.layer p {
+  color: white;
+}
+
+/*---------- facilities ----------*/
+
+.facilities {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+.facilities-col {
+  flex-basis: 31%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  text-align: left;
+}
+.facilities-col img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.facilities-col p {
+  padding: 0;
+}
+.facilities-col h3 {
+  margin-top: 16px;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+/*---------- testimonials ----------*/
+
+.testimonials {
+  width: 80%;
+  margin: auto;
+  padding-top: 100px;
+  text-align: center;
+}
+.testimonial-col {
+  flex-basis: 44%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  text-align: left;
+  background: #fff3f3;
+  padding: 25px;
+  cursor: pointer;
+  display: flex;
+}
+.testimonial-col img {
+  height: 40px;
+  margin-left: 5px;
+  margin-right: 30px;
+  border-radius: 50%;
+}
+.testimonial-col p {
+  padding: 0;
+}
+.testimonial-col h3 {
+  margin-top: 15px;
+  text-align: left;
+}
+.testimonial-col .fa {
+  color: #f44336;
+}
+@media (max-width: 700px) {
+  .testimonial-col img {
+    margin-left: 0px;
+    margin-right: 15px;
+  }
+}
+
+/*---------- call to action ------------*/
+
+.cta {
+  margin: 100px auto;
+  width: 80%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(images/banner2.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.cta h1 {
+  color: white;
+  margin-bottom: 40px;
+  padding: 0;
+}
+
+@media (max-width: 700px) {
+  .cta h1 {
+    font-size: 24px;
+  }
+}
+
+/*---------- footer------------*/
+
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.footer h4 {
+  margin-bottom: 25px;
+  margin-top: 20px;
+  font-weight: 600;
+}
+.icons .fa {
+  color: red;
+  margin: 0 13px;
+  cursor: pointer;
+  padding: 18px 0;
+}
+.fa-heart-o {
+  color: #e007d6;
+}
+/*------- about us page ------------*/
+
+.sub-header {
+  height: 60vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(images/background.jpg);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: white;
+}
+
+.sub-header h1 {
+  margin-top: 100px;
+}
+
+.sub-header h3 a {
+  color: whitesmoke;
+}
+.about-us {
+  width: 80%;
+  margin: auto;
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
+
+.about-col img {
+  width: 100%;
+  margin-top: 15px;
+}
+.about-col {
+  flex-basis: 48%;
+  padding: 20px 2px;
+}
+.about-col h1 {
+  padding-top: 0;
+}
+.about-col h2 {
+  padding-top: 0;
+}
+.about-col p {
+  padding: 15px 0 25px;
+}
+.red-btn {
+  border: 1px solid #e007d6;
+  background: transparent;
+  color: #e007d6;
+}
+.red-btn:hover {
+  color: white;
+}
+/*---------- blog content ---------*/
+.blog-left h2 {
+  text-align: center;
+}
+.blog-content {
+  width: 80%;
+  margin: auto;
+  padding: 60px 0;
+}
+.blog-left {
+  flex-basis: 65%;
+}
+.blog-left img {
+  width: 100%;
+}
+.blog-left img {
+  color: #222;
+  font-weight: 600;
+  margin: 30px 0;
+}
+.blog-left p {
+  color: black;
+}
+
+.blog-right {
+  flex-basis: 32%;
+}
+.blog-right h3 {
+  background: rgb(202, 42, 181);
+  color: white;
+  padding: 8px 0;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.blog-right div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #555;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.pro-col {
+  flex-basis: 32%;
+  border-radius: 10px;
+  margin-bottom: 16px;
+  position: relative;
+  overflow: hidden;
+}
+.pro-col img {
+  width: 100%;
+  display: block;
+}
+
+.layer2 {
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+
+.layer2:hover {
+  background: rgba(190, 0, 207, 0.7);
+}
+
+.layer2 h3 {
+  width: 100%;
+  font-weight: 500;
+  color: white;
+  font-size: 26px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  opacity: 0;
+  transition: 0.75s;
+}
+
+.layer2:hover h3 {
+  bottom: 20%;
+  opacity: 1;
+}
+
+.layer2 p {
+  color: whitesmoke;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+.blog-right .dropdown:hover .dropdown-content {
+  display: inline-block;
+}
+.comment-box {
+  border: 1px solid #ccc;
+  margin: 50px 0;
+  padding: 10px 20px;
+}
+.comment-box h3 {
+  text-align: left;
+  padding-top: 20px;
+}
+.comment-form input,
+.comment-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 15px 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  background: #f0f0f0;
+}
+.comment-form button {
+  margin: 10px 0;
+}
+@media (max-width: 700px) {
+  .sub-header h1 {
+    font-size: 24px;
+  }
+}
+
+/*---------- contact us page---------*/
+
+.location {
+  width: 80%;
+  margin: auto;
+  padding: 80px 0;
+}
+.location iframe {
+  width: 100%;
+}
+.contact-us {
+  width: 80%;
+  margin: auto;
+}
+.contact-col {
+  flex-basis: 48%;
+  margin-bottom: 30px;
+}
+.contact-col div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.contact-col div .fa {
+  font-size: 28px;
+  color: #e007d6;
+  margin: 10px;
+  margin-right: 30px;
+}
+.contact-col div p {
+  padding: 0;
+}
+.contact-col div h5 {
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: #555;
+  font-weight: 400;
+}
+.contact-col input,
+.contact-col textarea {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 17px;
+  outline: none;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+/*---------- login page---------*/
+.login-box {
+  position: relative;
+  border: 3px solid #ccc;
+  margin: 30px 0;
+  padding: 20px 20px;
+  padding-bottom: 30px;
+  margin-left: 400px;
+  margin-right: 400px;
+}
+.login-box h2 {
+  text-align: center;
+}
+.login-box h5 {
+  margin-left: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.login-box h5 a {
+  margin-left: 10px;
+  text-align: center;
+  margin-bottom: 0;
+}
+.login-form input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+}
+.login-form button {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+@media (max-width: 700px) {
+  .login-box {
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-left: 20px;
+  }
+  .login-box h3 {
+    font-size: 20px;
+  }
+  .login-box h5 {
+    font-size: 12px;
+    margin-right: 30px;
+  }
+  .login-form input[type="email"] {
+    width: 85%;
+    font-size: 12px;
+    margin-left: 90px;
+    margin-bottom: 20px;
+  }
+  .login-form input[type="password"] {
+    width: 85%;
+    font-size: 12px;
+    margin-left: 90px;
+  }
+  .login-form button {
+    font-size: 12px;
+    margin-bottom: 10px;
+    margin-left: 100px;
+  }
+  .login-form {
+    margin-left: -100px;
+  }
+  .login-form button:hover {
+    background: rgba(190, 0, 207, 0.7);
+  }
+  .login-form i {
+    margin-left: 80px;
+    margin-bottom: 0;
+  }
+  .login-box div h6 {
+    font-size: 10px;
+    margin-left: 20px;
+  }
+}
+.login-form {
+  position: relative;
+}
+.login-form i {
+  position: absolute;
+  left: 0;
+  top: 15px;
+  padding: 8px 15px;
+  color: #aaa;
+  transition: 0.3s;
+}
+.login-form input[type="email"] {
+  padding-left: 40px;
+}
+.login-form input[type="email"]:focus + i {
+  color: dodgerblue;
+}
+.login-form input[type="password"] {
+  padding-left: 40px;
+}
+.login-form input[type="password"]:focus + i {
+  color: dodgerblue;
+}
+.login-form button[type="submit"] {
+  padding-left: 40px;
+  width: max-content;
+  text-align: center;
+}
+
+.login-box a {
+  position: static;
+  margin-left: 175px;
+}
+/*---------- signup page---------*/
+.sign-form input[type="email"] {
+  padding-left: 40px;
+}
+.sign-form input[type="email"]:focus + i {
+  color: dodgerblue;
+}
+.sign-form input[type="password"] {
+  padding-left: 40px;
+}
+.sign-form input[type="password"]:focus + i {
+  color: dodgerblue;
+}
+
+.sign-form {
+  position: relative;
+}
+.sign-form i {
+  position: absolute;
+  left: 0;
+  top: 40px;
+  padding: 8px 15px;
+  color: #aaa;
+  transition: 0.3s;
+}
+.sign-form input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+}
+.sign-form button {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.sign-box {
+  border: 1px solid #ccc;
+  margin: 20px 0;
+  padding: 5px 5px;
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-top: 30px;
+  padding-bottom: 0;
+}
+.sign-box h2 {
+  text-align: center;
+}
+.sign-box h3 {
+  text-align: center;
+  margin-bottom: 0;
+}
+.sign-left {
+  flex-basis: 65%;
+}
+.sign-left img {
+  width: 100%;
+  color: #222;
+  font-weight: 600;
+  margin: 20px 0;
+  margin-bottom: 0;
+}
+
+.cta1 {
+  margin: 100px auto;
+  width: 80%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(44, 43, 43, 0.7)),
+    url(images/JOIN\ us.jpeg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.cta1 h1 {
+  color: white;
+  margin-bottom: 40px;
+  padding: 0;
+}
+
+@media (max-width: 700px) {
+  .sign-box {
+    font-size: 12px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .sign-form {
+    font-size: 12px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .sign-form button {
+    font-size: 12px;
+    margin-top: 30px;
+    margin-right: 0;
+  }
+  .sign-form input {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-left: 0;
+    block-size: 60px;
+  }
+  .sign-form i {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .cta1 h1 {
+    font-size: 20px;
+  }
+}
+
+/* Student Portal*/
+
+.sub-header2 {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(images/portal.jpeg);
+  background-size: cover;
+  text-align: center;
+  color: white;
+}
+
+.sub-header2 h1 {
+  font-size: 300%;
+  padding-top: 160px;
+}
+.sub-header3 {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(26, 30, 46, 0.7), rgba(4, 9, 30, 0.7)),
+    url(images/portal2.jpeg);
+  background-size: cover;
+  text-align: center;
+  color: white;
+  padding-top: 100px;
+  padding-bottom: 0;
+}
+.login-box2 {
+  position: relative;
+  border: 3px solid #ccc;
+  padding: 20px 20px;
+  padding-bottom: 30px;
+  margin-left: 400px;
+  margin-right: 400px;
+}
+.login-box2 h2 {
+  text-align: center;
+}
+.login-box2 h5 {
+  margin-left: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.login-box2 h5 a {
+  margin-left: 10px;
+  text-align: center;
+  margin-bottom: 0;
+  color: whitesmoke;
+}
+.login-form2 input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+}
+.login-form2 button {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.login-form2 {
+  position: relative;
+}
+.login-form2 i {
+  position: absolute;
+  left: 0;
+  top: 15px;
+  padding: 8px 15px;
+  color: #aaa;
+  transition: 0.3s;
+}
+.login-form2 input[type="email"] {
+  padding-left: 40px;
+}
+.login-form2 input[type="email"]:focus + i {
+  color: dodgerblue;
+}
+.login-form2 input[type="password"] {
+  padding-left: 40px;
+}
+.login-form2 input[type="password"]:focus + i {
+  color: dodgerblue;
+}
+.login-form2 button[type="submit"] {
+  padding-left: 40px;
+  width: max-content;
+  text-align: center;
+}
+
+.login-box2 a {
+  position: static;
+  margin-left: 175px;
+}
+
+.hero-btn2 {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 12px 34px;
+  font-size: 13px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+.hero-btn2:hover {
+  border: 1px solid #e007d6;
+  background: #e007d6;
+  transition: 1s;
+}
+
+@media (max-width: 700px) {
+  .login-box2 {
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-left: 20px;
+  }
+  .sub-header2 h1 {
+    font-size: 27px;
+  }
+  .sub-header2 {
+    height: 80vh;
+  }
+  .sub-header3 {
+    height: 80vh;
+  }
+  .login-box2 h3 {
+    font-size: 20px;
+  }
+
+  .login-box2 h5 {
+    font-size: 14px;
+    margin-right: 40px;
+  }
+  .login-form2 input[type="email"] {
+    width: 87%;
+    font-size: 13px;
+    margin-left: 88px;
+  }
+  .login-form2 input[type="password"] {
+    width: 87%;
+    font-size: 13px;
+    margin-left: 88px;
+  }
+  .login-form2 button {
+    font-size: 13px;
+    margin-bottom: 10px;
+    margin-left: 100px;
+  }
+  .login-form2 {
+    margin-left: -100px;
+  }
+  .login-form2 button:hover {
+    background: rgba(190, 0, 207, 0.7);
+  }
+  .login-form2 i {
+    margin-left: 80px;
+    margin-bottom: 0;
+  }
+  .login-box2 div h6 {
+    font-size: 10px;
+    margin-left: 20px;
+  }
+}

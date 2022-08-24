@@ -1,0 +1,14 @@
+{
+  "folders": [
+    {
+      "path": "."
+    },
+    {
+      "name": "SSH FS - cse",
+      "uri": "ssh://cse/import/glass/2/z5419884"
+    }
+  ],
+  "settings": {
+    "editor.tabSize": 2
+  }
+}
