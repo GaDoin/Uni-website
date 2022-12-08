@@ -422,7 +422,7 @@ h3 {
   flex-basis: 32%;
 }
 .blog-right h3 {
-  background: rgb(202, 42, 181);
+  background: rgba(66, 65, 68, 0.7);
   color: white;
   padding: 8px 0;
   font-size: 16px;
@@ -460,7 +460,7 @@ h3 {
 }
 
 .layer2:hover {
-  background: rgba(190, 0, 207, 0.7);
+  background: rgba(54, 51, 54, 0.7);
 }
 
 .layer2 h3 {
@@ -553,7 +553,7 @@ h3 {
 }
 .contact-col div .fa {
   font-size: 28px;
-  color: #e007d6;
+  color: #222;
   margin: 10px;
   margin-right: 30px;
 }
@@ -583,9 +583,13 @@ h3 {
   text-align:center;
 }
 
+.form-container h1 {
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
 .form-container h5 {
   margin-top: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 /* start here */
 .form-container input {
@@ -596,7 +600,7 @@ h3 {
 }
 
 .form-container button {
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .sign-link h5 {
@@ -618,13 +622,13 @@ h3 {
   padding-left: 40px;
 }
 .sign-form input[type="email"]:focus + i {
-  color: dodgerblue;
+  color: #e007d6;
 }
 .sign-form input[type="password"] {
   padding-left: 40px;
 }
 .sign-form input[type="password"]:focus + i {
-  color: dodgerblue;
+  color: #e007d6;
 }
 
 .sign-form {
@@ -774,7 +778,7 @@ h3 {
   margin-left: 10px;
   text-align: center;
   margin-bottom: 0;
-  color: whitesmoke;
+  color: dodgerblue;
 }
 
 /* start here */
@@ -785,6 +789,7 @@ h3 {
   box-sizing: border-box;
   margin-bottom: 15px;
 }
+
 .portal-form button {
   margin-bottom: 10px;
   margin-top: 10px;
@@ -836,55 +841,7 @@ h3 {
 }
 
 @media (max-width: 700px) {
-  .portal-container {
-    margin-left: 50px;
-    margin-right: 50px;
-    padding-left: 20px;
-  }
   .sub-header2 h1 {
-    font-size: 27px;
-  }
-  .sub-header2 {
-    height: 80vh;
-  }
-  .sub-header3 {
-    height: 80vh;
-  }
-  .portal-container h3 {
-    font-size: 20px;
-  }
-
-  .portal-container h5 {
-    font-size: 14px;
-    margin-right: 40px;
-  }
-  .portal-form input[type="email"] {
-    width: 87%;
-    font-size: 13px;
-    margin-left: 88px;
-  }
-  .portal-form input[type="password"] {
-    width: 87%;
-    font-size: 13px;
-    margin-left: 88px;
-  }
-  .portal-form button {
-    font-size: 13px;
-    margin-bottom: 10px;
-    margin-left: 100px;
-  }
-  .portal-form {
-    margin-left: -100px;
-  }
-  .portal-form button:hover {
-    background: rgba(190, 0, 207, 0.7);
-  }
-  .portal-form i {
-    margin-left: 80px;
-    margin-bottom: 0;
-  }
-  .portal-container div h6 {
-    font-size: 10px;
-    margin-left: 20px;
+    font-size: 24px;
   }
 }
