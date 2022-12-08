@@ -203,7 +203,7 @@ h3 {
   transition: 0.5s;
 }
 .layer:hover {
-  background: rgba(190, 0, 207, 0.7);
+  background: rgba(54, 51, 54, 0.7);
 }
 .layer h3 {
   width: 100%;
@@ -285,7 +285,7 @@ h3 {
   text-align: left;
 }
 .testimonial-col .fa {
-  color: #f44336;
+  color: #e007d6;
 }
 @media (max-width: 700px) {
   .testimonial-col img {
@@ -334,7 +334,7 @@ h3 {
   font-weight: 600;
 }
 .icons .fa {
-  color: red;
+  color: rgb(181, 21, 196);
   margin: 0 13px;
   cursor: pointer;
   padding: 18px 0;
@@ -576,117 +576,43 @@ h3 {
   box-sizing: border-box;
 }
 /*---------- login page---------*/
-.login-box {
-  position: relative;
-  border: 3px solid #ccc;
-  margin: 30px 0;
-  padding: 20px 20px;
-  padding-bottom: 30px;
-  margin-left: 400px;
-  margin-right: 400px;
+.form-container {
+  margin: 2% auto;
+  display: block;
+  width:100%;
+  text-align:center;
 }
-.login-box h2 {
-  text-align: center;
-}
-.login-box h5 {
-  margin-left: 10px;
-  text-align: center;
+
+.form-container h5 {
+  margin-top: 10px;
   margin-bottom: 20px;
 }
-.login-box h5 a {
-  margin-left: 10px;
-  text-align: center;
-  margin-bottom: 0;
-}
-.login-form input {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
+/* start here */
+.form-container input {
+  margin-bottom:15px;
+  width: 20%;
   box-sizing: border-box;
-  margin-bottom: 15px;
+  padding: 3px 10px;
 }
-.login-form button {
-  margin-bottom: 10px;
+
+.form-container button {
   margin-top: 10px;
 }
 
-@media (max-width: 700px) {
-  .login-box {
-    margin-left: 50px;
-    margin-right: 50px;
-    padding-left: 20px;
-  }
-  .login-box h3 {
-    font-size: 20px;
-  }
-  .login-box h5 {
-    font-size: 12px;
-    margin-right: 30px;
-  }
-  .login-form input[type="email"] {
-    width: 85%;
-    font-size: 12px;
-    margin-left: 90px;
-    margin-bottom: 20px;
-  }
-  .login-form input[type="password"] {
-    width: 85%;
-    font-size: 12px;
-    margin-left: 90px;
-  }
-  .login-form button {
-    font-size: 12px;
-    margin-bottom: 10px;
-    margin-left: 100px;
-  }
-  .login-form {
-    margin-left: -100px;
-  }
-  .login-form button:hover {
-    background: rgba(190, 0, 207, 0.7);
-  }
-  .login-form i {
-    margin-left: 80px;
-    margin-bottom: 0;
-  }
-  .login-box div h6 {
-    font-size: 10px;
-    margin-left: 20px;
-  }
-}
-.login-form {
-  position: relative;
-}
-.login-form i {
-  position: absolute;
-  left: 0;
-  top: 15px;
-  padding: 8px 15px;
-  color: #aaa;
-  transition: 0.3s;
-}
-.login-form input[type="email"] {
-  padding-left: 40px;
-}
-.login-form input[type="email"]:focus + i {
-  color: dodgerblue;
-}
-.login-form input[type="password"] {
-  padding-left: 40px;
-}
-.login-form input[type="password"]:focus + i {
-  color: dodgerblue;
-}
-.login-form button[type="submit"] {
-  padding-left: 40px;
-  width: max-content;
-  text-align: center;
+.sign-link h5 {
+  padding-top: 15px;
 }
 
-.login-box a {
-  position: static;
-  margin-left: 175px;
+.thelink {
+  padding-top: 15px;
 }
+
+@media (max-width: 700px) {
+  .sub-header h1 {
+    font-size: 24px;
+  }
+}
+
 /*---------- signup page---------*/
 .sign-form input[type="email"] {
   padding-left: 40px;
@@ -724,7 +650,6 @@ h3 {
   margin-bottom: 20px;
 }
 .sign-box {
-  border: 1px solid #ccc;
   margin: 20px 0;
   padding: 5px 5px;
   margin-left: 200px;
@@ -812,8 +737,8 @@ h3 {
 }
 
 .sub-header2 h1 {
-  font-size: 300%;
-  padding-top: 160px;
+  font-size: 400%;
+  padding-top: 280px;
 }
 .sub-header3 {
   height: 100vh;
@@ -826,70 +751,69 @@ h3 {
   padding-top: 100px;
   padding-bottom: 0;
 }
-.login-box2 {
-  position: relative;
-  border: 3px solid #ccc;
-  padding: 20px 20px;
-  padding-bottom: 30px;
-  margin-left: 400px;
-  margin-right: 400px;
+.portal-container {
+  margin: 2% auto;
+  display: block;
+  width:100%;
+  text-align:center;
 }
-.login-box2 h2 {
+.portal-container h1 {
+  padding-top: 200px;
   text-align: center;
 }
-.login-box2 h5 {
+.portal-container h4 {
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+.portal-container h5 {
   margin-left: 10px;
   text-align: center;
   margin-bottom: 20px;
 }
-.login-box2 h5 a {
+.portal-container h5 a {
   margin-left: 10px;
   text-align: center;
   margin-bottom: 0;
   color: whitesmoke;
 }
-.login-form2 input {
-  width: 100%;
+
+/* start here */
+.portal-form input {
+  width: 20%;
   padding: 12px 20px;
   margin: 8px 0;
   box-sizing: border-box;
   margin-bottom: 15px;
 }
-.login-form2 button {
+.portal-form button {
   margin-bottom: 10px;
   margin-top: 10px;
 }
 
-.login-form2 {
+.portal-form {
   position: relative;
 }
-.login-form2 i {
+.portal-form i {
   position: absolute;
-  left: 0;
   top: 15px;
   padding: 8px 15px;
   color: #aaa;
   transition: 0.3s;
 }
-.login-form2 input[type="email"] {
-  padding-left: 40px;
+.portal-form input[type="email"]:focus + i {
+  color: #e007d6;
 }
-.login-form2 input[type="email"]:focus + i {
-  color: dodgerblue;
+
+.portal-form input[type="password"]:focus + i {
+  color: #e007d6;
 }
-.login-form2 input[type="password"] {
-  padding-left: 40px;
-}
-.login-form2 input[type="password"]:focus + i {
-  color: dodgerblue;
-}
-.login-form2 button[type="submit"] {
+.portal-form button[type="submit"] {
   padding-left: 40px;
   width: max-content;
   text-align: center;
 }
 
-.login-box2 a {
+.portal-container a {
   position: static;
   margin-left: 175px;
 }
@@ -912,7 +836,7 @@ h3 {
 }
 
 @media (max-width: 700px) {
-  .login-box2 {
+  .portal-container {
     margin-left: 50px;
     margin-right: 50px;
     padding-left: 20px;
@@ -926,40 +850,40 @@ h3 {
   .sub-header3 {
     height: 80vh;
   }
-  .login-box2 h3 {
+  .portal-container h3 {
     font-size: 20px;
   }
 
-  .login-box2 h5 {
+  .portal-container h5 {
     font-size: 14px;
     margin-right: 40px;
   }
-  .login-form2 input[type="email"] {
+  .portal-form input[type="email"] {
     width: 87%;
     font-size: 13px;
     margin-left: 88px;
   }
-  .login-form2 input[type="password"] {
+  .portal-form input[type="password"] {
     width: 87%;
     font-size: 13px;
     margin-left: 88px;
   }
-  .login-form2 button {
+  .portal-form button {
     font-size: 13px;
     margin-bottom: 10px;
     margin-left: 100px;
   }
-  .login-form2 {
+  .portal-form {
     margin-left: -100px;
   }
-  .login-form2 button:hover {
+  .portal-form button:hover {
     background: rgba(190, 0, 207, 0.7);
   }
-  .login-form2 i {
+  .portal-form i {
     margin-left: 80px;
     margin-bottom: 0;
   }
-  .login-box2 div h6 {
+  .portal-container div h6 {
     font-size: 10px;
     margin-left: 20px;
   }

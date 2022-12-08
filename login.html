@@ -40,30 +40,31 @@
     </section>
 
     <!-------- Log in page --------->
-    <section>
-        <div class="login-box">
-            <h2>Manage Your Application<br>
-            </h2>
-            <h5>Continue or start your application</h5>
-            <div class="login-form" method="Post">
-                <input type="email" name="email address" placeholder="Email address" autocomplete="off"><i
-                    class="fa fa-envelope-o"></i>
+    <div class="form-container">
+        <h1>Manage Your Application</h1>
+        <h5>Continue or start your application</h5>
+
+        <form>
+            <div class="form-floating" method="Post">
+                <input type="email" name="email address" placeholder="Email address">
             </div>
-            <div class="login-form" method="Post">
-                <input type="password" name="password" placeholder="Password" autocomplete="off"><i
-                    class="fa fa-key"></i>
+            <div class="form-floating" method="Post">
+                <input type="password" name="password" placeholder="Password">
             </div>
-            <h5>
-                <div class="login-form" method="Post">
-                    <button type="submit" class="hero-btn red-btn">
-                        Login With Email Address
-                    </button>
-                </div>
-                <h5>OR</h5>
-            </h5>
-            <h5><a href="signup.html">Click here to start your application!</a></h5>
-        </div>
-    </section>
+            <button type="submit" class="hero-btn red-btn">
+                Login with email
+            </button>
+            <div class="sign-link">
+                <h5>
+                    OR <br>
+                    <div class="thelink">
+                        <a href="signup.html">Click here to start your new application</a>
+                    </div>
+                </h5>
+                
+            </div>
+        </form>
+    </div>
 
     <!-------- Footer --------->
     <section class="footer">
